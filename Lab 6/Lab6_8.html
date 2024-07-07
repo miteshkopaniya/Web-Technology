@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            background-color: aqua;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="box" onmouseover="changeColor()" onmouseout="changeBg()">
+
+    </div>
+    <p id="datebtn"></p>
+
+    <button type="button" onclick="time()">click to show the time</button>
+
+    <button onclick="changeBGColor()">RED</button>
+
+    <button onclick="changeBgColor()">GREEN</button>
+
+    <script>
+
+
+        changeColor = () => {
+            document.getElementById('box').style.backgroundColor = 'yellow';
+        }
+
+        changeBg = () => {
+            document.getElementById('box').style.backgroundColor = 'black';
+        }
+
+        time = () => {
+            const time = Date.now();
+
+            const currentDate = new Date(time);
+
+            const formattedDate = currentDate.toLocaleString();
+            document.getElementById('datebtn').innerHTML = formattedDate;
+        }
+
+        changeBGColor = () =>{
+            document.body.style.backgroundColor = 'red';
+
+        }
+
+        changeBgColor = () =>{
+            document.body.style.backgroundColor = 'green';
+        }
+
+
+    </script>
+
+</body>
+
+</html>

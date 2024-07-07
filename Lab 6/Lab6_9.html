@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div>
+        <p>Press any key</p>
+        <input type="text" id="text" onkeypress="keyPress()" title="key">
+        <p id="p1"></p>
+    </div>
+
+    <script>
+        function KeyPress() {
+            var key = event.keyCode;
+            if (key == 97 || key == 101 || key == 105 || key == 111 
+            || key == 117){
+                document.getElementById("p1").innerHTML = "Vowel Is Pressed";
+
+            }
+            else{
+                document.getElementById("p1").innerHTML = "Consonant Is Pressed"; 
+            }
+        }
+
+    </script>
+</body>
+
+</html>
