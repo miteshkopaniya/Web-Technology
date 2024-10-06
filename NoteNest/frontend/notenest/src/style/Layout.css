@@ -1,0 +1,35 @@
+.navbar {
+    padding: 15px 20px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-title {
+    font-family: 'Georgia', serif;
+    font-size: 28px;
+    color: #0d47a1;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.nav-link {
+    color: #0d47a1;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #0364cd;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .nav-item {
+        text-align: center;
+        margin: 10px 0;
+    }
+}

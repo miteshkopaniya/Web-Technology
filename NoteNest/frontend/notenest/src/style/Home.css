@@ -1,0 +1,50 @@
+.home {
+    min-height: 88vh;
+    background: linear-gradient(to right, #e0f7fa, #b2ebf2);
+    color: #003366;
+    padding: 20px;
+    transition: background 0.5s ease;
+}
+
+.home-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.home-description {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.home-subtitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.btn{
+    background-color: #003366;
+    color: #e0f7fa;
+}
+
+.btn:hover{
+    background-color: #b8f7ff;
+    border: 1px solid #003366;
+    color: #003366;
+}
+
+@media (max-width: 576px) {
+    .home-title {
+        font-size: 36px;
+    }
+
+    .home-description {
+        font-size: 20px;
+    }
+
+    .home-subtitle {
+        font-size: 16px;
+    }
+}
